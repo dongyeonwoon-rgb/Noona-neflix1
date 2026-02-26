@@ -1,0 +1,55 @@
+/* Netflix-like dark theme */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #141414;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    margin: 0;
+    color: #e50914;
+    font-size: 2rem;
+}
+
+.movie-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-card img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.movie-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    box-sizing: border-box;
+}
